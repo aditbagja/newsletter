@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="icon" href="/dist/img/favicon.ico">
     <link rel="stylesheet" href="/dist/css/supreme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +59,7 @@
                 <div class="w-full self-center px-4 mt-5 lg:w-1/2 lg:pl-24">
                     <p class="font-base">"Craving unbiased, jargon-free tech news and analysis from around the world? You're in luck! Get the <span class="text-primary">Byte-Sized</span> Tech Brief crafted by industry experts and become the most <span class="text-primary">tech-savvy</span> person in the room."</p>
                     <div class="w-full md:w-full md:flex">
-                      <input type="text" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
+                      <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
                       <button class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
                     </div>
                 </div>
@@ -148,7 +149,7 @@
     <!-- Top Briefing Section -->
     <section class="pt-10 pb-10 bg-background">
         <div class="container mx-auto">
-            <div class="flex flex-wrap border-t-[1px] border-b-[1px] border-black">
+            <div class="flex flex-wrap border-t-[1px] lg:border-b-[1px] border-black">
                 <div class="w-full px-4 lg:w-1/2 lg:border-r-[1px] lg:border-black lg:order-first">
                     <h1 class="font-anton uppercase text-center text-[2.75rem] mb-3 mt-10">Top Briefings</h1>
                     <img src="/dist/img/bitcoin.png" alt="Bitcoin" class="object-cover mb-3 md:mx-auto md:w-full">
@@ -177,7 +178,7 @@
                         <p class="text-lg lg:text-base mb-3 lg:mb-0">Henry Le / 17 - May - 2023</p>
                         <p class="text-lg lg:text-base leading-none">Decoding Ethereum transaction input data can be challenging, especially when the transaction is interacting with a complex smart contract system like PancakeSwap or Uniswap.</p>
                     </div>
-                    <div class="w-full border-t-[1px] border-black mb-6">
+                    <div class="w-full border-t-[1px] border-b-[1px] lg:border-b-0 border-black mb-6">
                         <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0">A glance into non-RMRK NFT standard tech in the Polkadot ecosystem.</h2>
                         <p class="text-lg lg:text-base mb-3 lg:mb-0">Quill Digital / 24 - May - 2023</p>
                         <p class="text-lg lg:text-base leading-none mb-6">At inception, every project developer is tasked with finding a network with the ideal tech standard required to support the development and running of their product.</p>
@@ -198,7 +199,7 @@
                 <div class="px-5 sm:p-10 w-full text-white lg:w-1/2">
                     <h1 class="text-lg sm:text-2xl">Trusted by <span class="font-bold text-primary">50.000+</span> Subscriber</h1>
                     <div class="w-full md:flex mb-3">
-                        <input type="text" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary text-black border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary text-black border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
                         <button class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
                     </div>
                     <h1 class="text-lg sm:text-2xl uppercase sm:text-right">No spam, no noise, <span class="text-primary font-bold">unsubscribe</span> any time</h1>
@@ -208,18 +209,43 @@
     </section>
     <!-- End of Subscribe Section -->
     
-    <!-- Take it From Them Section -->
+    <!-- Take it From Them Card Section -->
     <section class="pt-10 pb-10 bg-background ">
         <div class="container mx-auto border-t-[1px] border-black">
-            <div class="w-full mt-10">
+            <div class="w-full mt-10 mb-10">
                 <h1 class="font-anton uppercase text-[2.75rem] text-center">Take it From Them</h1>
             </div>
-            <div class="flex flex-wrap">
-                
+            <div id="wrapper" class="w-full flex items-center overflow-hidden scroll-smooth px-4">
+                <div id="card" class="gap-5 flex flex-nowrap px-4 transition duration-150 ease-in-out">
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none mb-64">"I would highly recommend Chaincatalyst to anyone who is looking for a secure, easy-to-use, and versatile platform for managing their crypto assets. Whether you are a beginner or an experienced crypto user."</p>
+                        <b class="font-extrabold text-xl">Red Prince</b>
+                    </div>
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none">"My go-to source for unbiased news and insights on decentralized technologies. It keeps me informed, inspired, and connected to the latest advancements in the industry."</p>
+                        <b class="font-extrabold text-xl">Sebille</b>
+                    </div>
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none">"This newsletter has become an indispensable resource for me in navigating the decentralized technology landscape. With its concise yet informative format, the newsletter delivers unbiased news, insightful analysis, and in-depth explorations of decentralized applications."</p>
+                        <b class="font-extrabold text-xl">Ifan Ben Mezd</b>
+                    </div>
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none">"completely transformed how I stay up to date with the decentralized technology landscape. With its concise and informative content, this newsletter has become my go-to resource for understanding the latest trends, news, and insights in Web3"</p>
+                        <b class="font-extrabold text-xl">Lohse</b>
+                    </div>
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none">"Unbiased insights, captivating content, and essential for the decentralized future."</p>
+                        <b class="font-extrabold text-xl">Beast</b>
+                    </div>
+                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
+                        <p class="text-2xl font-['Supreme-Light'] leading-none">"Trusted source for unbiased news, insightful analysis, and captivating explorations of decentralized technologies."</p>
+                        <b class="font-extrabold text-xl">Fane</b>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- End of Take it From Them Section -->
+    <!-- End of Take it From Them Card Section -->
 
     <!-- Subscribe Footer Section -->
     <section class="pt-10 pb-10 bg-black">
@@ -228,7 +254,7 @@
                 <h1 class="font-anton text-[2.75rem] uppercase mx-auto text-center leading-none mb-3">Subscribe for free</h1>
                 <p class="text-lg text-center leading-none mb-8 md:text-2xl">Your cheeky guide to a complicated world of web3. Subscribe and join over 50,000 readers who get their daily insights with the odd chuckle in less than five minutes.</p>
                 <div class="w-full md:flex mb-3 mx-auto">
-                    <input type="text" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 text-black mb-3 mt-3 md:mr-3 md:mb-0">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 text-black mb-3 mt-3 md:mr-3 md:mb-0">
                     <button class="lg:mx-auto w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
                 </div>
             </div>
@@ -242,6 +268,7 @@
     </footer>
     <!-- End of Footer Section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="/dist/js/autoslider.js"></script>
 
 </body>
 </html>

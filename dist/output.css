@@ -646,6 +646,10 @@ html{
   margin-right: 0.75rem;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -692,6 +696,10 @@ html{
 
 .h-8 {
   height: 2rem;
+}
+
+.h-\[35rem\] {
+  height: 35rem;
 }
 
 .max-h-\[35rem\] {
@@ -892,6 +900,11 @@ html{
 
 .p-8 {
   padding: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -1370,12 +1383,6 @@ html{
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0px * var(--tw-space-x-reverse));
-    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:border-0 {
     border-width: 0px;
   }
@@ -1572,6 +1579,11 @@ html{
     padding-right: 2rem;
   }
 
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pb-64 {
     padding-bottom: 16rem;
   }
@@ -1662,95 +1674,62 @@ html{
     padding-right: 3.5rem;
   }
 
+  .\32xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .\32xl\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .\32xl\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .\32xl\:pb-52 {
     padding-bottom: 13rem;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
 @media (min-width: 2560px) {
-  .\34k\:-top-\[200\%\] {
-    top: -200%;
-  }
-
-  .\34k\:-top-\[50\%\] {
-    top: -50%;
-  }
-
-  .\34k\:-top-\[500\%\] {
-    top: -500%;
-  }
-
-  .\34k\:-top-\[550\%\] {
-    top: -550%;
-  }
-
-  .\34k\:-top-\[650\%\] {
-    top: -650%;
-  }
-
-  .\34k\:-top-\[700\%\] {
-    top: -700%;
-  }
-
-  .\34k\:-top-\[750\%\] {
-    top: -750%;
-  }
-
-  .\34k\:-top-\[730\%\] {
-    top: -730%;
-  }
-
-  .\34k\:-top-\[470\%\] {
-    top: -470%;
-  }
-
-  .\34k\:-top-\[450\%\] {
-    top: -450%;
-  }
-
-  .\34k\:-top-\[400\%\] {
-    top: -400%;
-  }
-
   .\34k\:-top-\[370\%\] {
     top: -370%;
   }
 
-  .\34k\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .\34k\:mr-auto {
-    margin-right: auto;
-  }
-
-  .\34k\:mr-96 {
-    margin-right: 24rem;
-  }
-
-  .\34k\:mb-5 {
-    margin-bottom: 1.25rem;
+  .\34k\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .\34k\:mb-8 {
     margin-bottom: 2rem;
   }
 
+  .\34k\:h-\[45rem\] {
+    height: 45rem;
+  }
+
   .\34k\:h-auto {
     height: auto;
   }
 
-  .\34k\:w-\[70px\] {
-    width: 70px;
-  }
-
-  .\34k\:w-\[80px\] {
-    width: 80px;
+  .\34k\:h-\[50rem\] {
+    height: 50rem;
   }
 
   .\34k\:w-\[100px\] {
     width: 100px;
+  }
+
+  .\34k\:max-w-md {
+    max-width: 28rem;
   }
 
   .\34k\:border-0 {
@@ -1761,26 +1740,9 @@ html{
     border-bottom-width: 2px;
   }
 
-  .\34k\:border-t-2 {
-    border-top-width: 2px;
-  }
-
   .\34k\:border-black {
     --tw-border-opacity: 1;
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  }
-
-  .\34k\:p-0 {
-    padding: 0px;
-  }
-
-  .\34k\:p-4 {
-    padding: 1rem;
-  }
-
-  .\34k\:px-96 {
-    padding-left: 24rem;
-    padding-right: 24rem;
   }
 
   .\34k\:px-0 {
@@ -1798,31 +1760,6 @@ html{
     padding-right: 6rem;
   }
 
-  .\34k\:px-9 {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-
-  .\34k\:px-52 {
-    padding-left: 13rem;
-    padding-right: 13rem;
-  }
-
-  .\34k\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .\34k\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .\34k\:px-72 {
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
   .\34k\:px-80 {
     padding-left: 20rem;
     padding-right: 20rem;
@@ -1832,17 +1769,8 @@ html{
     padding-bottom: 24rem;
   }
 
-  .\34k\:pt-\[30rem\] {
-    padding-top: 30rem;
-  }
-
   .\34k\:pt-\[35rem\] {
     padding-top: 35rem;
-  }
-
-  .\34k\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .\34k\:text-2xl {
@@ -1850,28 +1778,14 @@ html{
     line-height: 2rem;
   }
 
-  .\34k\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .\34k\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .\34k\:text-\[10rem\] {
-    font-size: 10rem;
-  }
-
   .\34k\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .\34k\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
+  .\34k\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .\34k\:text-6xl {
@@ -1879,13 +1793,22 @@ html{
     line-height: 1;
   }
 
-  .\34k\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
-  }
-
   .\34k\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .\34k\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .\34k\:text-\[10rem\] {
+    font-size: 10rem;
+  }
+
+  .\34k\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

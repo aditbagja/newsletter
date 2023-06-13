@@ -36,7 +36,6 @@ function handleScrollBoundary() {
   }
 }
 
-
 // Fungsi untuk memulai autoplay
 function startAutoplay() {
   autoplayInterval = setInterval(() => {

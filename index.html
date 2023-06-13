@@ -1,279 +1,666 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/supreme.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="icon" type="icon" href="dist/img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/supreme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="icon" href="dist/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <title>Newsletter</title>
-</head>
-<body>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar Section -->
     <header class="bg-background 4k:border-b-2 4k:border-black">
-        <nav class="max-w-screen-xl mx-auto border-b-2 border-gray-800 4k:border-0">
-            <div class="flex flex-wrap items-center justify-between p-4 4k:px-0">
-            <div class="flex items-center">
-                <img src="dist/img/logo.png" class="h-8 mr-3 4k:h-auto" alt="Chain Catalyst Logo"/>
-            </div>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-primary focus:outline-none focus:ring-2 focus:ring-black" aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium 4k:text-xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                <li>
-                    <a href="#" class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold">Articles</a>
-                </li>
-                <li>
-                    <a href="#" class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold">Analytics</a>
-                </li>
-                <li>
-                    <a href="#" class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold">About Us</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
+      <nav
+        class="max-w-screen-xl mx-auto border-b-2 border-gray-800 4k:border-0"
+      >
+        <div class="flex flex-wrap items-center justify-between p-4 4k:px-0">
+          <div class="flex items-center mr-auto">
+            <img
+              src="dist/img/logo.png"
+              class="h-8 mr-3 4k:h-auto"
+              alt="Chain Catalyst Logo"
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-black rounded-lg md:hidden hover:bg-primary focus:outline-none focus:ring-2 focus:ring-black"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium 4k:text-xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold"
+                  >Articles</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold"
+                  >Analytics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-anton uppercase block py-2 pl-3 pr-4 text-black md:bg-transparent hover:bg-primary hover:text-white rounded md:p-0 md:hover:bg-transparent md:hover:text-black md:font-[Supreme-Regular] md:font-semibold"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
     <!-- End of Navbar Section -->
     <div class="flex flex-wrap">
-    <!-- Hero Section -->
-    <section class="pt-12 pb-44 bg-background w-full md:pb-52 lg:pb-64 2xl:pb-52 4k:pb-96">
+      <!-- Hero Section -->
+      <section
+        class="pt-12 pb-44 bg-background w-full md:pb-52 lg:pb-64 2xl:pb-52 4k:pb-96"
+      >
         <div class="container mx-auto">
-            <div class="flex-wrap lg:px-4 2xl:px-14 4k:px-24">
-                <div class="w-full flex px-4 items-center box-border justify-between ">
-                    <h1 class="font-anton font-bold uppercase leading-none text-[55px] sm:text-8xl lg:text-9xl 4k:text-[10rem]">More Than Just</h1>
-                    <img src="dist/img/logo-right.png" alt="img-right" class="sm:w-20 md:w-32" width="40">
-                </div>
-                <div class="w-full self-center px-4 mt-4 lg:mt-5">
-                <h1 class="font-anton font-bold leading-none uppercase text-[55px] sm:text-8xl lg:text-9xl 4k:text-[10rem]">A <span class="text-primary">Tech</span> Newsletter</h1>
-                </div>
+          <div class="flex-wrap lg:px-4 2xl:px-14 4k:px-24">
+            <div
+              class="w-full flex px-4 items-center box-border justify-between"
+            >
+              <h1
+                class="font-anton font-bold uppercase leading-none text-[55px] sm:text-8xl lg:text-9xl 4k:text-[10rem]"
+              >
+                More Than Just
+              </h1>
+              <img
+                src="dist/img/logo-right.png"
+                alt="img-right"
+                class="sm:w-20 md:w-32"
+                width="40"
+              />
             </div>
-            <div class="flex flex-wrap 2xl:px-10 4k:px-20">
-                <div class="w-full self-center px-4 mt-5 lg:w-1/2 lg:px-7">
-                    <p class="font-base 4k:text-3xl">"Craving unbiased, jargon-free tech news and analysis from around the world? You're in luck! Get the <span class="text-primary">Byte-Sized</span> Tech Brief crafted by industry experts and become the most <span class="text-primary">tech-savvy</span> person in the room."</p>
-                    <div class="w-full md:w-full md:flex 4k:text-2xl">
-                      <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
-                      <button class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
-                    </div>
-                </div>
-                <div class="w-full self-center px-4 mt-4 lg:w-1/2">
-                    <h2 class="font-bold md:font-[Supreme-Extrabold] uppercase md:text-lg 4k:text-4xl">Join</h2> 
-                    <h1 class="font-[Supreme-Extrabold] text-primary text-lg md:text-3xl lg:text-5xl 4k:text-8xl">35,000+FOUNDERS</h1>
-                    <h2 class="font-bold leading-none md:font-[Supreme-Extrabold] uppercase text-base md:text-lg 4k:text-4xl">Who start their day with tech digest</h2>
-                </div>
+            <div class="w-full self-center px-4 mt-4 lg:mt-5">
+              <h1
+                class="font-anton font-bold leading-none uppercase text-[55px] sm:text-8xl lg:text-9xl 4k:text-[10rem]"
+              >
+                A <span class="text-primary">Tech</span> Newsletter
+              </h1>
             </div>
+          </div>
+          <div class="flex flex-wrap 2xl:px-10 4k:px-20">
+            <div class="w-full self-center px-4 mt-5 lg:w-1/2 lg:px-7">
+              <p class="font-base 4k:text-3xl">
+                "Craving unbiased, jargon-free tech news and analysis from
+                around the world? You're in luck! Get the
+                <span class="text-primary">Byte-Sized</span> Tech Brief crafted
+                by industry experts and become the most
+                <span class="text-primary">tech-savvy</span> person in the
+                room."
+              </p>
+              <div class="w-full md:w-full md:flex 4k:text-2xl">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0"
+                />
+                <button
+                  class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3"
+                >
+                  Try It Out
+                </button>
+              </div>
+            </div>
+            <div class="w-full self-center px-4 mt-4 lg:w-1/2">
+              <h2
+                class="font-bold md:font-[Supreme-Extrabold] uppercase md:text-lg 4k:text-4xl"
+              >
+                Join
+              </h2>
+              <h1
+                class="font-[Supreme-Extrabold] text-primary text-lg md:text-3xl lg:text-5xl 4k:text-8xl"
+              >
+                35,000+FOUNDERS
+              </h1>
+              <h2
+                class="font-bold leading-none md:font-[Supreme-Extrabold] uppercase text-base md:text-lg 4k:text-4xl"
+              >
+                Who start their day with tech digest
+              </h2>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- End of Hero Section -->
+      </section>
+      <!-- End of Hero Section -->
 
-    <!-- Middle Image Section -->
-    <div class="w-full flex items-center justify-center">
-        <a href="#tech" class="z-10 relative left-[43%] -top-[300%] md:-top-[350%] md:left-[45%] lg:-top-[350%] 2xl:-top-[300%] 4k:-top-[370%]"><img src="dist/img/arrow.png" alt="Arrow Down" width="50px" class="4k:w-[100px]"></a>
-        <img src="dist/img/img-1.png" alt="Image" class="object-cover absolute mt-6 w-11/12 sm:mt-40 sm:w-[40rem] md:mt-48 md:w-[50rem] lg:w-11/12 object-[50%_20%] max-h-[35rem] 2xl:w-11/12 2xl:max-h-[60vh]">
-    </div>
-    <!-- End of Middle Image -->
+      <!-- Middle Image Section -->
+      <div class="w-full flex items-center justify-center">
+        <a
+          href="#tech"
+          class="z-10 relative left-[43%] -top-[300%] md:-top-[350%] md:left-[45%] lg:-top-[350%] 2xl:-top-[300%] 4k:-top-[370%]"
+          ><img
+            src="dist/img/arrow.png"
+            alt="Arrow Down"
+            width="50px"
+            class="4k:w-[100px]"
+        /></a>
+        <img
+          src="dist/img/img-1.png"
+          alt="Image"
+          class="object-cover absolute mt-6 w-11/12 sm:mt-40 sm:w-[40rem] md:mt-48 md:w-[50rem] lg:w-11/12 object-[50%_20%] max-h-[35rem] 2xl:w-11/12 2xl:max-h-[60vh]"
+        />
+      </div>
+      <!-- End of Middle Image -->
 
-    <!-- Why Tech Digest Section -->
-    <section class="w-full pt-52 pb-32 bg-black sm:pt-80 md:pt-[26rem] lg:pt-[28rem] 4k:pt-[35rem]">
+      <!-- Why Tech Digest Section -->
+      <section
+        class="w-full pt-52 pb-32 bg-black sm:pt-80 md:pt-[26rem] lg:pt-[28rem] 4k:pt-[35rem]"
+      >
         <div class="container mx-auto">
-            <div id="tech" class="w-full px-4">
-                <h1 class="text-white font-anton uppercase text-center text-4xl font-semibold 4k:text-7xl">Why Tech Digest ?</h1>
+          <div id="tech" class="w-full px-4">
+            <h1
+              class="text-white font-anton uppercase text-center text-4xl font-semibold 2xl:text-5xl 4k:text-7xl"
+            >
+              Why Tech Digest ?
+            </h1>
+          </div>
+          <div
+            class="w-full px-4 flex flex-wrap justify-center md:px-0 lg:px-6 2xl:px-9 4k:px-20"
+          >
+            <div
+              class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3"
+            >
+              <div class="flex items-center box-border justify-between">
+                <h1
+                  class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl"
+                >
+                  Get <span class="text-primary">Unique</span> Insight
+                </h1>
+                <img
+                  src="dist/img/card-1.png"
+                  alt="card-img1"
+                  width="40"
+                  class="lg:w-[80px]"
+                />
+              </div>
+              <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">
+                We've been in the rooms where it happens and we'll tell you
+                what's really going on.
+              </p>
             </div>
-            <div class="w-full px-4 flex flex-wrap justify-center md:px-0 lg:px-6">
-                <div class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3 lg:px-8">
-                    <div class="flex items-center box-border justify-between">
-                        <h1 class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl">Get <span class="text-primary">Unique</span> Insight</h1>
-                        <img src="dist/img/card-1.png" alt="card-img1" width="40" class="lg:w-[80px]">
-                    </div>
-                    <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">We've been in the rooms where it happens and we'll tell you what's really going on.</p>
-                </div>
-                <div class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3 lg:px-8">
-                    <div class="flex items-center box-border justify-between">
-                        <h1 class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl">Save <span class="text-primary">Time</span> and Effort</h1>
-                        <img src="dist/img/card-2.png" alt="card-img1" width="40" class="lg:w-[80px]">
-                    </div>
-                    <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">We've been in the rooms where it happens and we'll tell you what's really going on.</p>
-                </div>
-                <div class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3 lg:px-8">
-                    <div class="flex items-center box-border justify-between">
-                        <h1 class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl">Staying <span class="text-primary">Informed</span></h1>
-                        <img src="dist/img/card-3.png" alt="card-img1" width="40" class="lg:w-[80px]">
-                    </div>
-                    <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">We've been in the rooms where it happens and we'll tell you what's really going on.</p>
-                </div>
+            <div
+              class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3 lg:px-8"
+            >
+              <div class="flex items-center box-border justify-between">
+                <h1
+                  class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl"
+                >
+                  Save <span class="text-primary">Time</span> and Effort
+                </h1>
+                <img
+                  src="dist/img/card-2.png"
+                  alt="card-img1"
+                  width="40"
+                  class="lg:w-[80px]"
+                />
+              </div>
+              <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">
+                We've been in the rooms where it happens and we'll tell you
+                what's really going on.
+              </p>
             </div>
+            <div
+              class="mt-10 p-4 lg:border-r-2 lg:border-white lg:w-1/3 lg:px-8"
+            >
+              <div class="flex items-center box-border justify-between">
+                <h1
+                  class="text-white uppercase text-bold text-2xl lg:text-4xl 4k:text-6xl"
+                >
+                  Staying <span class="text-primary">Informed</span>
+                </h1>
+                <img
+                  src="dist/img/card-3.png"
+                  alt="card-img1"
+                  width="40"
+                  class="lg:w-[80px]"
+                />
+              </div>
+              <p class="text-white text-lg lg:text-2xl lg:mt-3 4k:text-4xl">
+                We've been in the rooms where it happens and we'll tell you
+                what's really going on.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- End of Why Tech Digest Section -->
+      </section>
+      <!-- End of Why Tech Digest Section -->
     </div>
 
     <!-- Brand Icons Marquee Section-->
-    <section class="pt-10 pb-5 bg-background ">
-        <div class="container mx-auto">
-            <div class="w-full px-4 lg:px-20">
-                <div class="flex flex-wrap">
-                    <div class="w-full sm:w-1/2 md:w-1/4 p-4">
-                        <p class="text-lg 4k:text-3xl">Trusted</p>
-                        <strong class="text-lg font-bold 4k:text-3xl">by professionals at</strong>
-                    </div>
-                    <div class="w-full p-4 sm:w-1/2 md:w-3/4">
-                        <div class="relative flex overflow-x-hidden">
-                            <div class="flex animate-marquee whitespace-nowrap xs:animate-marquee-xs sm:animate-marquee-sm md:animate-marquee-md lg:animate-marquee-lg 2xl:animate-marquee-2xl">
-                                <img src="dist/img/brand/1-aldrin.png" alt="Aldrin" class="mx-4">
-                                <img src="dist/img/brand/2-Cvi.png" alt="CVI" class="mx-4">
-                                <img src="dist/img/brand/3-Bebop.png" alt="Bebop" class="mx-4">
-                                <img src="dist/img/brand/4-LandX.png" alt="LandX" class="mx-4">
-                                <img src="dist/img/brand/5-Factor.png" alt="Factor" class="mx-4">
-                                <img src="dist/img/brand/6-Radiant.png" alt="Radiant" class="mx-4">
-                            </div>
-                            <div class="flex absolute animate-marquee2 whitespace-nowrap xs:animate-marquee2-xs sm:animate-marquee2-sm md:animate-marquee2-md lg:animate-marquee2-lg 2xl:animate-marquee2-2xl">
-                                <img src="dist/img/brand/1-aldrin.png" alt="Aldrin" class="mx-4">
-                                <img src="dist/img/brand/2-Cvi.png" alt="CVI" class="mx-4">
-                                <img src="dist/img/brand/3-Bebop.png" alt="Bebop" class="mx-4">
-                                <img src="dist/img/brand/4-LandX.png" alt="LandX" class="mx-4">
-                                <img src="dist/img/brand/5-Factor.png" alt="Factor" class="mx-4">
-                                <img src="dist/img/brand/6-Radiant.png" alt="Radiant" class="mx-4">
-                            </div>
-                          </div>
-                    </div>
-                </div>
+    <section class="pt-10 pb-5 bg-background">
+      <div class="container mx-auto">
+        <div class="w-full px-4 lg:px-20">
+          <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/4 p-4">
+              <p class="text-lg 4k:text-3xl">Trusted</p>
+              <strong class="text-lg font-bold 4k:text-3xl"
+                >by professionals at</strong
+              >
             </div>
+            <div class="w-full p-4 sm:w-1/2 md:w-3/4">
+              <div class="relative flex overflow-x-hidden">
+                <div
+                  class="flex animate-marquee whitespace-nowrap xs:animate-marquee-xs sm:animate-marquee-sm md:animate-marquee-md lg:animate-marquee-lg 2xl:animate-marquee-2xl"
+                >
+                  <img
+                    src="dist/img/brand/1-aldrin.png"
+                    alt="Aldrin"
+                    class="mx-4"
+                  />
+                  <img src="dist/img/brand/2-Cvi.png" alt="CVI" class="mx-4" />
+                  <img
+                    src="dist/img/brand/3-Bebop.png"
+                    alt="Bebop"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/4-LandX.png"
+                    alt="LandX"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/5-Factor.png"
+                    alt="Factor"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/6-Radiant.png"
+                    alt="Radiant"
+                    class="mx-4"
+                  />
+                </div>
+                <div
+                  class="flex absolute animate-marquee2 whitespace-nowrap xs:animate-marquee2-xs sm:animate-marquee2-sm md:animate-marquee2-md lg:animate-marquee2-lg 2xl:animate-marquee2-2xl"
+                >
+                  <img
+                    src="dist/img/brand/1-aldrin.png"
+                    alt="Aldrin"
+                    class="mx-4"
+                  />
+                  <img src="dist/img/brand/2-Cvi.png" alt="CVI" class="mx-4" />
+                  <img
+                    src="dist/img/brand/3-Bebop.png"
+                    alt="Bebop"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/4-LandX.png"
+                    alt="LandX"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/5-Factor.png"
+                    alt="Factor"
+                    class="mx-4"
+                  />
+                  <img
+                    src="dist/img/brand/6-Radiant.png"
+                    alt="Radiant"
+                    class="mx-4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End of Brand Icons Marquee Section -->
 
     <!-- Top Briefing Section -->
     <section class="pt-10 pb-10 bg-background">
-        <div class="container mx-auto">
-            <div class="flex flex-wrap border-t-[1px] lg:border-b-[1px] border-black 4k:px-6">
-                <div class="w-full px-4 lg:w-1/2 lg:border-r-[1px] lg:border-black lg:order-first">
-                    <h1 class="font-anton uppercase text-center text-[2.75rem] mb-3 mt-10 4k:text-6xl">Top Briefings</h1>
-                    <img src="dist/img/bitcoin.png" alt="Bitcoin" class="object-cover mb-3 md:mx-auto md:w-full">
-                    <h2 class="font-extrabold text-2xl leading-none mb-3 4k:text-4xl">Unmasking Satoshi Nakamoto: 5 Shocking Revelations You Won't Believe!</h2>
-                    <p class="text-lg mb-3 4k:text-3xl">TuongVy Le / 24 - April - 2023</p>
-                    <p class="text-lg leading-none mb-12 4k:text-3xl">@Satoshi Nakamoto, the elusive creator of @Bitcoin, has captivated the world with his innovative cryptocurrency. But who is this mysterious figure behind the pseudonym?</p>
-                </div>
-                <div class="w-full px-4 lg:w-1/2 lg:order-last">
-                    <div class="w-full mb-6 lg:mt-10">
-                        <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-3 lg:mb-0 4k:text-4xl">More information about Zero-Value Token Transfer Attack</h2>
-                        <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">Abyss World / 28 - April - 2023</p>
-                        <p class="text-lg lg:text-base leading-none 4k:text-3xl">On June 1st, during our IDO event, we experienced a series of Zero-Value Token Transfer Attacks targeting our blockchain funds. As a security measure...</p>
-                    </div>
-                    <div class="w-full border-t-[1px] border-black mb-6">
-                        <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl">Elevate Your Project with our Space Tier Program</h2>
-                        <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">Galxe / 1 - May - 2023</p>
-                        <p class="text-lg lg:text-base leading-none 4k:text-3xl">This week, we submitted a comment in response to the SEC's proposed custody rule, together with Dragonfly Capital, Electric Capital,...</p>
-                    </div>
-                    <div class="w-full border-t-[1px] border-black mb-6">
-                        <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl">In your own words: where should we head next?</h2>
-                        <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">Nym / 5 - May - 2023</p>
-                        <p class="text-lg lg:text-base leading-none 4k:text-3xl">The Nym community operates the largest decentralised mixnet in the world today, counting 500+ mix nodes across 60 countries and five continents....</p>
-                    </div>
-                    <div class="w-full border-t-[1px] border-black mb-6">
-                        <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl">Decoding the multicall function data input in PancakeSwap v3 / UniswapV3</h2>
-                        <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">Henry Le / 17 - May - 2023</p>
-                        <p class="text-lg lg:text-base leading-none 4k:text-3xl">Decoding Ethereum transaction input data can be challenging, especially when the transaction is interacting with a complex smart contract system like PancakeSwap or Uniswap.</p>
-                    </div>
-                    <div class="w-full border-t-[1px] border-b-[1px] lg:border-b-0 border-black mb-6">
-                        <h2 class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl">A glance into non-RMRK NFT standard tech in the Polkadot ecosystem.</h2>
-                        <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">Quill Digital / 24 - May - 2023</p>
-                        <p class="text-lg lg:text-base leading-none mb-6 4k:text-3xl">At inception, every project developer is tasked with finding a network with the ideal tech standard required to support the development and running of their product.</p>
-                    </div>
-                </div>
+      <div class="container mx-auto">
+        <div
+          class="flex flex-wrap border-t-[1px] lg:border-b-[1px] border-black lg:px-8 4k:px-20"
+        >
+          <div
+            class="w-full px-4 lg:w-1/2 lg:border-r-[1px] lg:border-black lg:order-first"
+          >
+            <h1
+              class="font-anton uppercase text-center text-[2.75rem] mb-3 mt-10 4k:text-6xl"
+            >
+              Top Briefings
+            </h1>
+            <img
+              src="dist/img/bitcoin.png"
+              alt="Bitcoin"
+              class="object-cover mb-3 md:mx-auto md:w-full"
+            />
+            <h2 class="font-extrabold text-2xl leading-none mb-3 4k:text-4xl">
+              Unmasking Satoshi Nakamoto: 5 Shocking Revelations You Won't
+              Believe!
+            </h2>
+            <p class="text-lg mb-3 4k:text-3xl">
+              TuongVy Le / 24 - April - 2023
+            </p>
+            <p class="text-lg leading-none mb-12 4k:text-3xl">
+              @Satoshi Nakamoto, the elusive creator of @Bitcoin, has captivated
+              the world with his innovative cryptocurrency. But who is this
+              mysterious figure behind the pseudonym?
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:order-last">
+            <div class="w-full mb-6 lg:mt-10">
+              <h2
+                class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-3 lg:mb-0 4k:text-4xl"
+              >
+                More information about Zero-Value Token Transfer Attack
+              </h2>
+              <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">
+                Abyss World / 28 - April - 2023
+              </p>
+              <p class="text-lg lg:text-base leading-none 4k:text-3xl">
+                On June 1st, during our IDO event, we experienced a series of
+                Zero-Value Token Transfer Attacks targeting our blockchain
+                funds. As a security measure...
+              </p>
             </div>
+            <div class="w-full border-t-[1px] border-black mb-6">
+              <h2
+                class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl"
+              >
+                Elevate Your Project with our Space Tier Program
+              </h2>
+              <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">
+                Galxe / 1 - May - 2023
+              </p>
+              <p class="text-lg lg:text-base leading-none 4k:text-3xl">
+                This week, we submitted a comment in response to the SEC's
+                proposed custody rule, together with Dragonfly Capital, Electric
+                Capital,...
+              </p>
+            </div>
+            <div class="w-full border-t-[1px] border-black mb-6">
+              <h2
+                class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl"
+              >
+                In your own words: where should we head next?
+              </h2>
+              <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">
+                Nym / 5 - May - 2023
+              </p>
+              <p class="text-lg lg:text-base leading-none 4k:text-3xl">
+                The Nym community operates the largest decentralised mixnet in
+                the world today, counting 500+ mix nodes across 60 countries and
+                five continents....
+              </p>
+            </div>
+            <div class="w-full border-t-[1px] border-black mb-6">
+              <h2
+                class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl"
+              >
+                Decoding the multicall function data input in PancakeSwap v3 /
+                UniswapV3
+              </h2>
+              <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">
+                Henry Le / 17 - May - 2023
+              </p>
+              <p class="text-lg lg:text-base leading-none 4k:text-3xl">
+                Decoding Ethereum transaction input data can be challenging,
+                especially when the transaction is interacting with a complex
+                smart contract system like PancakeSwap or Uniswap.
+              </p>
+            </div>
+            <div
+              class="w-full border-t-[1px] border-b-[1px] lg:border-b-0 border-black mb-6"
+            >
+              <h2
+                class="font-extrabold text-2xl lg:text-xl leading-none mb-3 mt-6 lg:mb-0 4k:text-4xl"
+              >
+                A glance into non-RMRK NFT standard tech in the Polkadot
+                ecosystem.
+              </h2>
+              <p class="text-lg lg:text-base mb-3 lg:mb-0 4k:text-3xl">
+                Quill Digital / 24 - May - 2023
+              </p>
+              <p class="text-lg lg:text-base leading-none mb-6 4k:text-3xl">
+                At inception, every project developer is tasked with finding a
+                network with the ideal tech standard required to support the
+                development and running of their product.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End of Top Briefing Section -->
 
     <!-- Subscribe Section -->
     <section class="pt-10 pb-10 bg-background">
-        <div class="container mx-auto bg-black">
-            <div class="flex flex-wrap py-8 4k:px-52">
-                <div class="px-5 sm:p-10 w-full text-white lg:w-1/2">
-                    <h1 class="text-lg sm:text-2xl 4k:text-4xl">Subscribe for free today</h1>
-                </div>
-                <div class="px-5 sm:p-10 w-full text-white lg:w-1/2">
-                    <h1 class="text-lg sm:text-2xl 4k:text-4xl">Trusted by <span class="font-bold text-primary">50.000+</span> Subscriber</h1>
-                    <div class="w-full md:flex mb-3 4k:text-3xl">
-                        <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary text-black border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0">
-                        <button class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
-                    </div>
-                    <h1 class="text-lg sm:text-2xl uppercase sm:text-right 4k:text-4xl">No spam, no noise, <span class="text-primary font-bold">unsubscribe</span> any time</h1>
-                </div>
+      <div class="container mx-auto bg-black">
+        <div class="flex flex-wrap py-8 lg:px-8 4k:px-20">
+          <div class="px-5 sm:p-10 w-full text-white lg:w-1/2">
+            <h1 class="text-lg sm:text-2xl 4k:text-4xl">
+              Subscribe for free today
+            </h1>
+          </div>
+          <div class="px-5 sm:p-10 w-full text-white lg:w-1/2">
+            <h1 class="text-lg sm:text-2xl 4k:text-4xl">
+              Trusted by
+              <span class="font-bold text-primary">50.000+</span> Subscriber
+            </h1>
+            <div class="w-full md:flex mb-3 4k:text-3xl">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary text-black border-b-2 border-gray-800 mb-3 mt-3 md:mr-3 md:mb-0"
+              />
+              <button
+                class="w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3"
+              >
+                Try It Out
+              </button>
             </div>
+            <h1 class="text-lg sm:text-2xl uppercase sm:text-right 4k:text-4xl">
+              No spam, no noise,
+              <span class="text-primary font-bold">unsubscribe</span> any time
+            </h1>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End of Subscribe Section -->
-    
+
     <!-- Take it From Them Card Section -->
-    <section class="pt-10 pb-10 bg-background ">
-        <div class="container mx-auto border-t-[1px] border-black">
-            <div class="w-full mt-10 mb-10">
-                <h1 class="font-anton uppercase text-[2.75rem] text-center 4k:text-7xl">Take it From Them</h1>
-            </div>
-            <div id="wrapper" class="w-full flex items-center overflow-hidden scroll-smooth px-4 touch-pan-auto">
-                <div id="card" class="gap-5 flex flex-nowrap px-4 transition duration-150 ease-in-out">
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none mb-64 4k:text-3xl">"I would highly recommend Chaincatalyst to anyone who is looking for a secure, easy-to-use, and versatile platform for managing their crypto assets. Whether you are a beginner or an experienced crypto user."</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Red Prince</b>
-                    </div>
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none 4k:text-3xl">"My go-to source for unbiased news and insights on decentralized technologies. It keeps me informed, inspired, and connected to the latest advancements in the industry."</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Sebille</b>
-                    </div>
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none 4k:text-3xl">"This newsletter has become an indispensable resource for me in navigating the decentralized technology landscape. With its concise yet informative format, the newsletter delivers unbiased news, insightful analysis, and in-depth explorations of decentralized applications."</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Ifan Ben Mezd</b>
-                    </div>
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none 4k:text-3xl">"completely transformed how I stay up to date with the decentralized technology landscape. With its concise and informative content, this newsletter has become my go-to resource for understanding the latest trends, news, and insights in Web3"</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Lohse</b>
-                    </div>
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none 4k:text-3xl">"Unbiased insights, captivating content, and essential for the decentralized future."</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Beast</b>
-                    </div>
-                    <div id="card-item" class="max-w-sm p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0">
-                        <p class="text-2xl font-['Supreme-Light'] leading-none 4k:text-3xl">"Trusted source for unbiased news, insightful analysis, and captivating explorations of decentralized technologies."</p>
-                        <b class="font-extrabold text-xl 4k:text-3xl">Fane</b>
-                    </div>
-                </div>
-            </div>
+    <section class="pt-10 pb-10 bg-background">
+      <div class="container mx-auto border-t-[1px] border-black">
+        <div class="w-full mt-10 mb-10">
+          <h1
+            class="font-anton uppercase text-[2.75rem] text-center 4k:text-7xl 4k:mb-20"
+          >
+            Take it From Them
+          </h1>
         </div>
+        <div
+          class="w-full swiper-container mySwiper overflow-hidden flex items-center 4k:px-20"
+        >
+          <div class="swiper-wrapper gap-5 flex flex-nowrap px-2 2xl:px-4">
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "I would highly recommend Chaincatalyst to anyone who is
+                  looking for a secure, easy-to-use, and versatile platform for
+                  managing their crypto assets. Whether you are a beginner or an
+                  experienced crypto user."
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Red Prince</b>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "My go-to source for unbiased news and insights on
+                  decentralized technologies. It keeps me informed, inspired,
+                  and connected to the latest advancements in the industry."
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Sebille</b>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "This newsletter has become an indispensable resource for me
+                  in navigating the decentralized technology landscape. With its
+                  concise yet informative format, the newsletter delivers
+                  unbiased news, insightful analysis, and in-depth explorations
+                  of decentralized applications."
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Ifan Ben Mezd</b>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "completely transformed how I stay up to date with the
+                  decentralized technology landscape. With its concise and
+                  informative content, this newsletter has become my go-to
+                  resource for understanding the latest trends, news, and
+                  insights in Web3"
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Lohse</b>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "Unbiased insights, captivating content, and essential for the
+                  decentralized future."
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Beast</b>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-w-sm 4k:max-w-md h-[35rem] 4k:h-[50rem] p-8 border-solid border-4 border-black flex flex-col justify-between flex-grow flex-shrink-0"
+              >
+                <p
+                  class="text-2xl font-['Supreme-Light'] leading-none 4k:text-4xl"
+                >
+                  "Trusted source for unbiased news, insightful analysis, and
+                  captivating explorations of decentralized technologies."
+                </p>
+                <b class="font-extrabold text-xl 4k:text-4xl">Fane</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End of Take it From Them Card Section -->
 
     <!-- Subscribe Footer Section -->
     <section class="pt-10 pb-10 bg-black">
-        <div class="container mx-auto">
-            <div class="w-full p-10 py-20 flex flex-wrap text-white lg:px-56 4k:px-80">
-                <h1 class="font-anton text-[2.75rem] uppercase mx-auto text-center leading-none mb-3 4k:text-7xl 4k:mb-8">Subscribe for free</h1>
-                <p class="text-lg text-center leading-none mb-8 md:text-2xl 4k:text-4xl">Your cheeky guide to a complicated world of web3. Subscribe and join over 50,000 readers who get their daily insights with the odd chuckle in less than five minutes.</p>
-                <div class="w-full md:flex mb-3 mx-auto 4k:text-3xl">
-                    <input type="email" placeholder="Your Email" class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 text-black mb-3 mt-3 md:mr-3 md:mb-0">
-                    <button class="lg:mx-auto w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3">Try It Out</button> 
-                </div>
-            </div>
+      <div class="container mx-auto">
+        <div
+          class="w-full p-10 py-20 flex flex-wrap text-white lg:px-56 4k:px-80"
+        >
+          <h1
+            class="font-anton text-[2.75rem] uppercase mx-auto text-center leading-none mb-3 4k:text-7xl 4k:mb-8"
+          >
+            Subscribe for free
+          </h1>
+          <p
+            class="text-lg text-center leading-none mb-8 md:text-2xl 4k:text-4xl"
+          >
+            Your cheeky guide to a complicated world of web3. Subscribe and join
+            over 50,000 readers who get their daily insights with the odd
+            chuckle in less than five minutes.
+          </p>
+          <div class="w-full md:flex mb-3 mx-auto 4k:text-3xl">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary border-b-2 border-gray-800 text-black mb-3 mt-3 md:mr-3 md:mb-0"
+            />
+            <button
+              class="lg:mx-auto w-full bg-primary px-4 py-2 uppercase text-white font-semibold md:w-auto md:flex-shrink-0 md:mt-3"
+            >
+              Try It Out
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End of Subscribe Footer Section -->
-    
+
     <!-- Footer Section -->
     <footer class="bg-black">
-        <p class="text-center text-white text-sm 4k:text-2xl">&copy; 2023 Copyright: Chain Catalyst</p>
+      <p class="text-center text-white text-sm 4k:text-2xl">
+        &copy; 2023 Copyright: Chain Catalyst
+      </p>
     </footer>
     <!-- End of Footer Section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="dist/js/autoslider.js"></script>
+    <script src="dist/js/swiper.js"></script>
 
-</body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
 </html>

@@ -422,7 +422,7 @@ video {
   display: none;
 }
 
-html{
+html {
   font-family: Supreme-Regular;
 }
 
@@ -630,10 +630,6 @@ html{
   margin-bottom: 1.5rem;
 }
 
-.mb-64 {
-  margin-bottom: 16rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -784,10 +780,6 @@ html{
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .self-center {
@@ -1061,75 +1053,12 @@ html{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.swiper-slide {
+  opacity: 0.5;
+  &.swiper-slide-active {
+    opacity: 1;
+  }
 }
-
-.duration-150 {
-  transition-duration: 150ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* @keyframes marquee-verySmall {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-650%);
-    }
-  }
-@keyframes marquee-small {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-330%);
-    }
-  }
-  
-  @keyframes marquee-large {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
-  
-  .animate-marquee {
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .animate-marquee-item {
-    animation-delay: -5s; 
-  }  
-  
-  @media (max-width:480px){
-    .animate-marquee {
-        animation-name: marquee-verySmall;
-    }
-  }
-  @media (max-width: 767px) {
-    .animate-marquee {
-        animation-delay: -5s;
-        animation-name: marquee-small;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .animate-marquee {
-        animation-name: marquee-large;
-    }
-  }
-   */
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
@@ -1579,11 +1508,6 @@ html{
     padding-right: 2rem;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .lg\:pb-64 {
     padding-bottom: 16rem;
   }
@@ -1669,19 +1593,14 @@ html{
     padding-right: 2.5rem;
   }
 
+  .\32xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .\32xl\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
-
-  .\32xl\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .\32xl\:px-96 {
-    padding-left: 24rem;
-    padding-right: 24rem;
   }
 
   .\32xl\:px-9 {
@@ -1712,16 +1631,12 @@ html{
     margin-bottom: 2rem;
   }
 
-  .\34k\:h-\[45rem\] {
-    height: 45rem;
+  .\34k\:h-\[50rem\] {
+    height: 50rem;
   }
 
   .\34k\:h-auto {
     height: auto;
-  }
-
-  .\34k\:h-\[50rem\] {
-    height: 50rem;
   }
 
   .\34k\:w-\[100px\] {

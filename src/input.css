@@ -2,62 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    html{
-        font-family: Supreme-Regular;
-    }
+@layer base {
+  html {
+    font-family: Supreme-Regular;
+  }
 }
 
-/* @keyframes marquee-verySmall {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-650%);
-    }
+.swiper-slide {
+  opacity: 0.5;
+
+  &.swiper-slide-active {
+    opacity: 1;
   }
-@keyframes marquee-small {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-330%);
-    }
-  }
-  
-  @keyframes marquee-large {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%);
-    }
-  }
-  
-  .animate-marquee {
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .animate-marquee-item {
-    animation-delay: -5s; 
-  }  
-  
-  @media (max-width:480px){
-    .animate-marquee {
-        animation-name: marquee-verySmall;
-    }
-  }
-  @media (max-width: 767px) {
-    .animate-marquee {
-        animation-delay: -5s;
-        animation-name: marquee-small;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .animate-marquee {
-        animation-name: marquee-large;
-    }
-  }
-   */
+}

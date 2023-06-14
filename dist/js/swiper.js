@@ -1,31 +1,31 @@
 const swiper = new Swiper(".swiper-container", {
-    slidesPerView: "auto",
-    grabCursor: true,
-    loop: true,
-    autoplay: {
-      delay: autoplaySpeed,
-      disableOnInteraction: false,
+  slidesPerView: "auto",
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
     },
-    breakpoints: {
-      // Konfigurasi pada layar kecil (dibawah 640px)
-      640: {
-        slidesPerView: 1,
-      },
-      // Konfigurasi pada layar medium (640px hingga 768px)
-      768: {
-        slidesPerView: 2,
-      },
-      // Konfigurasi pada layar besar (di atas 768px)
-      1024: {
-        slidesPerView: 3,
-      },
+    768: {
+      slidesPerView: 2,
+      centeredSlides: true,
     },
-  });
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: true,
+    },
+  },
+});
 
-  swiper.on("mouseenter", () => {
-    swiper.autoplay.stop();
-  });
+swiper.on("mouseenter", () => {
+  swiper.autoplay.stop();
+});
 
-  swiper.on("mouseleave", () => {
-    swiper.autoplay.start();
-  });
+swiper.on("mouseleave", () => {
+  swiper.autoplay.start();
+});

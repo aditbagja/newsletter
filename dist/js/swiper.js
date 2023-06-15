@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
   grabCursor: true,
+  centeredSlides: true,
   loop: true,
   spaceBetween: 10,
   autoplay: {
@@ -9,15 +10,10 @@ const swiper = new Swiper(".swiper-container", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1,
-    },
-    768: {
       slidesPerView: 2,
-      centeredSlides: true,
     },
     1024: {
       slidesPerView: 3,
-      centeredSlides: true,
     },
   },
 });
